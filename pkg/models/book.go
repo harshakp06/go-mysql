@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/harshakp06/mysql/pkg/config"
+	"github.com/harshakp06/go-mysql/pkg/config"
 	"github.com/jinzhu/gorm"
 )
 
