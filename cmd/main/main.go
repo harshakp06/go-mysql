@@ -4,10 +4,10 @@ import (
 	"log"
 	"net/http"
 
-	_ "github.com/jinhzu/gorm/dialects/mysql"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 
 	"github.com/gorilla/mux"
-	"github.com/harshakp06/mysql/pkg/routes"
+	"github.com/harshakp06/go-mysql/pkg/routes"
 )
 
 func main() {

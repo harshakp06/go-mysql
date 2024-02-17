@@ -7,8 +7,8 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/harshakp06/mysql/pkg/models"
-	"github.com/harshakp06/mysql/pkg/utils"
+	"github.com/harshakp06/go-mysql/pkg/models"
+	"github.com/harshakp06/go-mysql/pkg/utils"
 )
 
 var NewBook models.Book
@@ -86,4 +86,6 @@ func UpdateBook(w http.ResponseWriter, r *http.Request) {
 	db.Save(&bookDetails)
 	res, _ := json.Marshal(bookDetails)
 	w.Header().Set("Content-Type", "pkgblication/json")
+	w.WriteHeader(http.StatusOK)
+	w.Write(res)
 }
