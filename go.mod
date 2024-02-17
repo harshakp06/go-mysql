@@ -1,4 +1,4 @@
-module github.com/harshakp06/mysql
+module github.com/harshakp06/go-mysql
 
 go 1.21.6
 
